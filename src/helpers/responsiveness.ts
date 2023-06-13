@@ -1,3 +1,5 @@
+import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
+
 export function resizeRendererToDisplaySize(
   renderer: THREE.WebGLRenderer,
   composer: EffectComposer
