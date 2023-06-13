@@ -9,7 +9,7 @@ export function resizeRendererToDisplaySize(
   const height = canvas.clientHeight;
   const needResize = canvas.width !== width || canvas.height !== height;
   if (needResize) {
-    composer.setSize(width, height, false);
+    composer.setSize(width, height);
     renderer.setSize(width, height, false);
   }
   return needResize;
