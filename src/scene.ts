@@ -188,6 +188,7 @@ function init() {
       colors.destroy();
       colors = colorFolder.addFolder("Colors");
       for (let i = 0; i < palette.length; i++) {
+        //@ts-expect-error
         colors.addColor(palette, [i]).name(`Color ${i + 1}`);
       }
     }
@@ -195,8 +196,11 @@ function init() {
       .add({ randomizePalette: randomizePalette }, "randomizePalette")
       .name("Randomize Palette")
       .onChange(() => {
+        //@ts-expect-error
         planeMesh.material.uniforms.uColor.value = null;
+        console.log("planeMesh.material:", planeMesh.material.uniforms);
         palette = randomizePalette();
+        //@ts-expect-error
         planeMesh.material.uniforms.uColor.value = palette;
         refreshAddColors(); // Refresh the addColor controls
       });
