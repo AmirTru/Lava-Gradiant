@@ -270,5 +270,5 @@ function animate() {
 
   cameraControls.update();
 
-  composer.render(scene, camera);
+  composer.render();
 }
