@@ -14,7 +14,6 @@ import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 import { NoiseEffect } from "./NoiseEffect";
 
 //Shader imports
-
 import fragmentShader from "./shaders/fragment.glsl";
 import vertexShader from "./shaders/vertex.glsl";
 
