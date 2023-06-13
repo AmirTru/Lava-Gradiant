@@ -10,10 +10,13 @@ import "./style.css";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
+// @ts-ignore
 import { NoiseEffect } from "./NoiseEffect";
 
 //Shader imports
+// @ts-ignore
 import fragmentShader from "./shaders/fragment.glsl";
+// @ts-ignore
 import vertexShader from "./shaders/vertex.glsl";
 
 const CANVAS_ID = "scene";
