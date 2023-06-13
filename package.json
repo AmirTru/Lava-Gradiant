@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "main": "scene",
+
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
