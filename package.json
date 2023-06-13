@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vercel --prod"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
@@ -20,6 +21,7 @@
   "dependencies": {
     "lil-gui": "^0.18.1",
     "nice-color-palettes": "^2.0.0",
-    "three": "^0.153.0"
+    "three": "^0.153.0",
+    "vercel": "^30.2.1"
   }
 }
