@@ -11,7 +11,7 @@ import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
 
-import { NoiseEffect } from "./NoiseEffect";
+import { NoiseEffect } from "./NoiseEffect.js";
 
 //Shader imports
 import fragmentShader from "./shaders/fragment.glsl";
